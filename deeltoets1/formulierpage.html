@@ -56,7 +56,7 @@
 						<input type="text" id="plaats" placeholder="Woonplaats" required />
 					</li>
 					<li>
-						<label for="tel">Telefoonnummer</label>
+						<label for="telefoonnummer">Telefoonnummer</label>
 						<input type="text" id="telefoonnummer" placeholder="Telefoonnummer" required />
 					</li>
 					<li>
@@ -88,51 +88,62 @@
 
   <tr>
     <td>
-    	<label for="titel">Titel</label><br>
+    	<label for="title">Titel</label><br>
     	<input type="text" id="title" placeholder="Titel van het project" required /><br>
     	<label for="Opdrachtomschrijving">Opdrachtomschrijving</label><br>
-    	<input type="text" id="opdrachtomschrijving" placeholder="Opdrachtomschrijving" required /><br>
+    	<input type="text" id="Opdrachtomschrijving" placeholder="Opdrachtomschrijving" required /><br>
     	<label for="Doelgroepomschrijving">Doelgroepomschrijving</label><br>
-    	<input type="text" id="doelgroep" placeholder="Doelgroepomschrijving" required /><br>
+    	<input type="text" id="Doelgroepomschrijving" placeholder="Doelgroepomschrijving" required /><br>
     	<label for="doelstellingproject">Doelstelling van het project</label><br>
     	<input type="text" id="doelstellingproject" placeholder="Doelstelling van het project" required /><br>
     	<label for="Looptijd">Looptijd van het project</label><br>
-    	<input type="text" id="looptijd" placeholder="Looptijd van het project" required /><br>
+    	<input type="text" id="Looptijd" placeholder="Looptijd van het project" required /><br>
     	<label for="Deadline">Deadline van het project</label><br>
-    	<input type="text" id="deadline" placeholder="Wanneer moet het project af zijn?" required /><br>
+    	<input type="text" id="Deadline" placeholder="Wanneer moet het project af zijn?" required /><br>
     </td>
     
     <td></td>
     <td></td>
 
-    <td><label for="geschiktvoor">Geschikt voor:</label><br>
-    	<input id="tweedejaars" type="checkbox"> Tweedejaars studenten<br>
-    	<input id="afstudeerders" type="checkbox"> Afstuderende studenten<br>
-    	<input id="onbekend" type="radio"> Onbekend<br></td>
+    <td>Geschikt voor:
+    	<select id="geschiktvoor1">
+    		<option value="tweedejaars">Tweedejaars studenten</option>
+    		<option value="vierdejaars">Afstuderende studenten</option>
+    		<option value="onbekend">Onbekend</option>
+    	</select></td>
     <td></td>
   </tr>
 
   <tr>
-    <td><label for="geschiktvoor">Geschikt voor:</label><br>
-    	<input id="eerstejaars" type="checkbox"> Eerstejaars studenten<br>
-    	<input id="tweedejaars2" type="checkbox"> Tweedejaars studenten<br>
-    	<input id="derdejaars" type="checkbox"> Derdejaars studenten<br>
-    	<input id="afstudeerders2" type="checkbox"> Afstuderende studenten<br>
-    	<input id="onbekend2" type="radio"> Onbekend</td> 
+    <td>Geschikt voor:
+    	<select id="geschiktvoor2">
+    		<option value="eerstejaars">Eerstejaars studenten</option>
+    		<option value="tweedejaars">Tweedejaars studenten</option>
+    		<option value="derdejaars">Derdejaars studenten</option>
+    		<option value="vierdejaars">Afstuderende studenten</option>
+    		<option value="onbekend">Onbekend</option>
+    	</select>
+
+</td> 
     
     <td></td>
     <td></td>
     
-    <td><label for="hoelangstage">Hoe lang is de stage?</label><br>
-    	<input id="10weken" type="radio"> 10 weken<br>
-    	<input id="20weken" type="radio"> 20 weken<br><br><br></td>
+    <td>
+    	Hoe lang is de stage?
+    	<select id="hoelangstage">
+    		<option value="10wk">10 weken</option>
+    		<option value="20wk">20 weken</option>
+    	</select>
+    	
+	</td>
+
     <td></td>
   </tr>
 
   <tr>
     <td><label for="Opmerkingen">Opmerkingen</label><br>
-    	<input type="text" id="opmerkingen" placeholder="Heeft u nog opmerkingen?"></td><br>
-    
+    	<input type="text" id="Opmerkingen" placeholder="Heeft u nog opmerkingen?"></td>
     <td></td>
     <td></td>
     
@@ -172,7 +183,7 @@
 			<option value="31">31</option>
 		</select>
 
-		<select id="maand">Maand</option>
+		<select id="maand">
 			<option value="januari">Januari</option>
 			<option value="februari">Februari</option>
 			<option value="maart">Maart</option>
@@ -187,7 +198,7 @@
 			<option value="december">December</option>
 		</select>
 
-		<select id="jaar">Jaar</option>
+		<select id="jaar">
 			<option value="2013">2013</option>
 			<option value="2014">2014</option>
 			<option value="2015">2015</option>
@@ -202,10 +213,9 @@
     <td></td>
     <td></td>
     <td><label for="werkzaamheden">Beschrijving Werkzaamheden</label><br>
-    	<input type="text" id="werkzaamheden" placeholder="Beschrijving Werkzaamheden"></td><br><br>
+    	<input type="text" id="werkzaamheden" placeholder="Beschrijving Werkzaamheden"></td>
     <td></td>
   </tr>
-  <br>
 
   <tr>
     <td></td>
@@ -214,22 +224,22 @@
     
     <td>Beschrijving stagebedrijf<br>
     	<label for="Bedrijfsnaam">Bedrijfsnaam</label><br>
-    	<input type="text" id="bedrijfsnaam" placeholder="Naam bedrijf"><br>
+    	<input type="text" id="Bedrijfsnaam" placeholder="Naam bedrijf"><br>
 
-    	<label for="Adres">Adres</label><br>
-    	<input type="text" id="adres" placeholder="Adres"><br>
+    	<label for="Adres2">Adres</label><br>
+    	<input type="text" id="Adres2" placeholder="Adres"><br>
 
-    	<label for="Postcode">Postcode</label><br>
-    	<input type="text" id="postcode" placeholder="Postcode"><br>
+    	<label for="Postcode2">Postcode</label><br>
+    	<input type="text" id="Postcode2" placeholder="Postcode"><br>
 
-    	<label for="Plaats">Plaats</label><br>
-    	<input type="text" id="plaats" placeholder="Plaats"><br>
+    	<label for="Plaats2">Plaats</label><br>
+    	<input type="text" id="Plaats2" placeholder="Plaats"><br>
 
     	<label for="Sector">Sector</label><br>
-    	<input type="text" id="sector" placeholder="Sector"><br>
+    	<input type="text" id="Sector" placeholder="Sector"><br>
 
     	<label for="CoreBusiness">Core Business</label><br>
-    	<input type="text" id="corebusiness" placeholder="Core Business"><br>
+    	<input type="text" id="CoreBusiness" placeholder="Core Business"><br>
     	</td>
 
     <td></td>
@@ -240,8 +250,8 @@
     <td></td>
     <td></td>
 
-    <td><label for="Opmerkingen">Opmerkingen</label><br>
-    	<input type="text" id="opmerkingen" placeholder="Heeft u nog opmerkingen?"></td>
+    <td><label for="Opmerkingen2">Opmerkingen</label><br>
+    	<input type="text" id="Opmerkingen2" placeholder="Heeft u nog opmerkingen?"></td>
     
     <td></td>
   </tr>
