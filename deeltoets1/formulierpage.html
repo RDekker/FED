@@ -1,271 +1,226 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-<title>Oefening 1</title>
+	<head>
+	    <meta charset="utf-8" />
+	    <meta name="description" content="Pagina gemaakt bij Front-End Development, tweede pagina van de eerste deelopdracht" />
+	    <meta name="keywords" content="deelopdracht1, fed, frontend, frontenddevelopment, cmd, html, htmlcss" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Formulierpagina</title>
+	</head>
 
-    <meta charset="utf-8" />
-    <meta name="description" content="Pagina gemaakt bij Front-End Development, tweede pagina van de eerste deelopdracht" />
-    <meta name="keywords" content="deelopdracht1, fed, frontend, frontenddevelopment, cmd, html, htmlcss" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
-
-<body>
-
-<nav>
-	<ul>
-		<li><a href="index.html">Opleiding CMD Amsterdam</a></li>
-        <li><a href="formulierpage.html">Aanmelden</a></li>
-    </ul>
-</nav>
-
-	<h1> Aanmelden </h1>
-<main>
-	<article>
-	<p> Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p> 
-	<p><em> CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam. </em></p> 
-	<p> Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.<br>
-		Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
-		Voor vragen of opmerkingen kunt u <a href="contact.html">contact</a> met ons opnemen. </p>
-	</article>
-
-	<article>
-		<form>
-			<fieldset>
-				<legend>Contactgegevens</legend>
+	<body>
+		<header>
+			<h1> Aanmelden </h1>
+			<nav>
 				<ul>
-					<li>
-						<label for="naam">Naam</label>
-						<input type="text" id="naam" placeholder="Voor- en achternaam" required />
-					</li>
-					<li>
-						<label for="bedrijf">Bedrijf</label>
-						<input type="text" id="bedrijf" placeholder="Bedrijf" required />
-					</li>
-					<li>
-						<label for="adres">Adres</label>
-						<input type="text" id="adres" placeholder="Straatnaam Huisnummer" required />
-					</li>
-					<li>
-						<label for="postcode">Postcode</label>
-						<input type="text" id="postcode" placeholder="Postcode" required />
-					</li>
-					<li>
-						<label for="plaats">Woonplaats</label>
-						<input type="text" id="plaats" placeholder="Woonplaats" required />
-					</li>
-					<li>
-						<label for="telefoonnummer">Telefoonnummer</label>
-						<input type="text" id="telefoonnummer" placeholder="Telefoonnummer" required />
-					</li>
-					<li>
-						<label for="email">E-mailadres</label>
-						<input type="email" id="email" placeholder="Emailadres" required />
-					</li>
-				</ul>
-			</fieldset>
-				<br>
-			<fieldset>
-				<legend>Ik wil mij aanmelden:</legend>
-				<input id="project" type="radio">
-				<label for="project">Voor een project</label> <br>
-				<input id="stage" type="radio">
-				<label for="stage">Als stagebedrijf</label> 
-			</fieldset>
-		</form>
-		<br>
-		<fieldset>
-			<legend>Project of Stage aanmelden</legend>
-			<table>
-  <tr>
-    <th>Project</th>
-    <th></th>
-    <th></th>
-    <th>Stage</th>
-    <th></th>
-  </tr>
+					<li><a href="index.html">Artikelpagina</a></li>
+			        <li><a href="formulierpage.html">Formulierpagina</a></li>
+			    </ul>
+			</nav>
+		</header>	
 
-  <tr>
-    <td>
-    	<label for="title">Titel</label><br>
-    	<input type="text" id="title" placeholder="Titel van het project" required /><br>
-    	<label for="Opdrachtomschrijving">Opdrachtomschrijving</label><br>
-    	<input type="text" id="Opdrachtomschrijving" placeholder="Opdrachtomschrijving" required /><br>
-    	<label for="Doelgroepomschrijving">Doelgroepomschrijving</label><br>
-    	<input type="text" id="Doelgroepomschrijving" placeholder="Doelgroepomschrijving" required /><br>
-    	<label for="doelstellingproject">Doelstelling van het project</label><br>
-    	<input type="text" id="doelstellingproject" placeholder="Doelstelling van het project" required /><br>
-    	<label for="Looptijd">Looptijd van het project</label><br>
-    	<input type="text" id="Looptijd" placeholder="Looptijd van het project" required /><br>
-    	<label for="Deadline">Deadline van het project</label><br>
-    	<input type="text" id="Deadline" placeholder="Wanneer moet het project af zijn?" required /><br>
-    </td>
-    
-    <td></td>
-    <td></td>
+		<main>
+			<article>
+				<p> Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p> 
+				<p><em> CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam. </em></p> 
+				<p> Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+					Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+					Voor vragen of opmerkingen kunt u <a href="contact.html">contact</a> met ons opnemen. </p>
+			</article>
 
-    <td>Geschikt voor:
-    	<select id="geschiktvoor1">
-    		<option value="tweedejaars">Tweedejaars studenten</option>
-    		<option value="vierdejaars">Afstuderende studenten</option>
-    		<option value="onbekend">Onbekend</option>
-    	</select></td>
-    <td></td>
-  </tr>
+			<article>
+				<form>
+					<fieldset>
+						<legend>Contactgegevens</legend>
+						<ul>
+							<li>
+								<label for="name">Naam</label>
+								<input type="text" id="name" placeholder="Voor- en achternaam" required />
+							</li>
+							<li>
+								<label for="company">Bedrijf</label>
+								<input type="text" id="company" placeholder="Bedrijf" required />
+							</li>
+							<li>
+								<label for="address">Adres</label>
+								<input type="text" id="address" placeholder="Straatnaam Huisnummer" required />
+							</li>
+							<li>
+								<label for="postalcode">Postcode</label>
+								<input type="text" id="postalcode" placeholder="Postcode" required />
+							</li>
+							<li>
+								<label for="hometown">Woonplaats</label>
+								<input type="text" id="hometown" placeholder="Woonplaats" required />
+							</li>
+							<li>
+								<label for="phonenumber">Telefoonnummer</label>
+								<input type="text" id="phonenumber" placeholder="Telefoonnummer" required />
+							</li>
+							<li>
+								<label for="emailaddress">E-mailadres</label>
+								<input type="email" id="emailaddress" placeholder="Emailadres" required />
+							</li>
+						</ul>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Ik wil mij aanmelden:</legend>
+						<input id="project" type="radio">
+						<label for="project">Voor een project</label> 
+						<input id="stage" type="radio">
+						<label for="stage">Als stagebedrijf</label> 
+					</fieldset>
+				</form>
+				
+				<fieldset>
+					<legend>Project of Stage aanmelden</legend>
+					<section>
+					    <h2>Project</h2>	    			
 
-  <tr>
-    <td>Geschikt voor:
-    	<select id="geschiktvoor2">
-    		<option value="eerstejaars">Eerstejaars studenten</option>
-    		<option value="tweedejaars">Tweedejaars studenten</option>
-    		<option value="derdejaars">Derdejaars studenten</option>
-    		<option value="vierdejaars">Afstuderende studenten</option>
-    		<option value="onbekend">Onbekend</option>
-    	</select>
+					    <p>
+					    	<label for="title">Titel</label>
+					    	<input type="text" id="title" placeholder="Titel van het project" required />
+					    	<label for="assignment">Opdrachtomschrijving</label>
+					    	<input type="text" id="assignment" placeholder="Opdrachtomschrijving" required />
+					    	<label for="targetgroup">Doelgroepomschrijving</label>
+					    	<input type="text" id="targetgroup" placeholder="Doelgroepomschrijving" required />
+					    	<label for="projectgoal">Doelstelling van het project</label>
+					    	<input type="text" id="projectgoal" placeholder="Doelstelling van het project" required />
+					    	<label for="runtime">Looptijd van het project</label>
+					    	<input type="text" id="runtime" placeholder="Looptijd van het project" required />
+					    	<label for="deadline">Deadline van het project</label>		    	
+					    	<input type="text" id="deadline" placeholder="Wanneer moet het project af zijn?" required />
+					    </p>
+					    
+						
 
-</td> 
-    
-    <td></td>
-    <td></td>
-    
-    <td>
-    	Hoe lang is de stage?
-    	<select id="hoelangstage">
-    		<option value="10wk">10 weken</option>
-    		<option value="20wk">20 weken</option>
-    	</select>
-    	
-	</td>
+					    <p>Geschikt voor:
+					    	<select id="appropriatefor2">
+					    		<option value="first">Eerstejaars studenten</option>
+					    		<option value="second">Tweedejaars studenten</option>
+					    		<option value="third">Derdejaars studenten</option>
+					    		<option value="fourth">Afstuderende studenten</option>
+					    		<option value="unknown">Onbekend</option>
+					    	</select>
+						</p> 
+					    
+						
 
-    <td></td>
-  </tr>
+					    <p><label for="remarks">Opmerkingen</label>
+					    	<input type="text" id="remarks" placeholder="Heeft u nog opmerkingen?">
+					    </p>
+					    
+					    <p>Begindatum
 
-  <tr>
-    <td><label for="Opmerkingen">Opmerkingen</label><br>
-    	<input type="text" id="Opmerkingen" placeholder="Heeft u nog opmerkingen?"></td>
-    <td></td>
-    <td></td>
-    
-    <td>Begindatum
+							<select id="day">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+							</select>
 
-		<select id="dag">
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="10">10</option>
-			<option value="11">11</option>
-			<option value="12">12</option>
-			<option value="13">13</option>
-			<option value="14">14</option>
-			<option value="15">15</option>
-			<option value="16">16</option>
-			<option value="17">17</option>
-			<option value="18">18</option>
-			<option value="19">19</option>
-			<option value="20">20</option>
-			<option value="21">21</option>
-			<option value="22">22</option>
-			<option value="23">23</option>
-			<option value="24">24</option>
-			<option value="25">25</option>
-			<option value="26">26</option>
-			<option value="27">27</option>
-			<option value="28">28</option>
-			<option value="29">29</option>
-			<option value="30">30</option>
-			<option value="31">31</option>
-		</select>
+							<select id="month">
+								<option value="january">Januari</option>
+								<option value="february">Februari</option>
+								<option value="march">Maart</option>
+								<option value="april">April</option>
+								<option value="may">Mei</option>
+								<option value="june">Juni</option>
+								<option value="july">Juli</option>
+								<option value="august">Augustus</option>
+								<option value="september">September</option>
+								<option value="october">Oktober</option>
+								<option value="november">November</option>
+								<option value="december">December</option>
+							</select>
 
-		<select id="maand">
-			<option value="januari">Januari</option>
-			<option value="februari">Februari</option>
-			<option value="maart">Maart</option>
-			<option value="april">April</option>
-			<option value="mei">Mei</option>
-			<option value="juni">Juni</option>
-			<option value="juli">Juli</option>
-			<option value="augustus">Augustus</option>
-			<option value="september">September</option>
-			<option value="oktober">Oktober</option>
-			<option value="november">November</option>
-			<option value="december">December</option>
-		</select>
+							<select id="year">
+								<option value="2014">2014</option>
+								<option value="2015">2015</option>
+							</select>
+						</p>
 
-		<select id="jaar">
-			<option value="2013">2013</option>
-			<option value="2014">2014</option>
-			<option value="2015">2015</option>
-		</select>
+					    <p> <label for="works">Beschrijving Werkzaamheden</label>
+					    	<input type="text" id="works" placeholder="Beschrijving Werkzaamheden">
+					    </p>
+					</section>
 
-	    </td>
-    <td></td>
-  </tr>
+					<section>
+						<h2>Stage</h2>
 
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td><label for="werkzaamheden">Beschrijving Werkzaamheden</label><br>
-    	<input type="text" id="werkzaamheden" placeholder="Beschrijving Werkzaamheden"></td>
-    <td></td>
-  </tr>
+					    <p>Geschikt voor:
+					    	<select id="appropriatefor1">
+					    		<option value="second">Tweedejaars studenten</option>
+					    		<option value="fourth">Afstuderende studenten</option>
+					    		<option value="unknown">Onbekend</option>
+					    	</select>
+					    </p>
+					    
+					    <p>Hoe lang is de stage?
+					    	<select id="duration">
+					    		<option value="10weeks">10 weken</option>
+					    		<option value="20weeks">20 weken</option>
+					    	</select>
+					    </p>
+					    
+					    <p>Beschrijving stagebedrijf
+					    	<label for="company2">Bedrijfsnaam</label>
+					    	<input type="text" id="company2" placeholder="Naam bedrijf">
 
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    
-    <td>Beschrijving stagebedrijf<br>
-    	<label for="Bedrijfsnaam">Bedrijfsnaam</label><br>
-    	<input type="text" id="Bedrijfsnaam" placeholder="Naam bedrijf"><br>
+					    	<label for="address2">Adres</label>
+					    	<input type="text" id="address2" placeholder="Adres">
 
-    	<label for="Adres2">Adres</label><br>
-    	<input type="text" id="Adres2" placeholder="Adres"><br>
+					    	<label for="postalcode2">Postcode</label>
+					    	<input type="text" id="postalcode2" placeholder="Postcode">
 
-    	<label for="Postcode2">Postcode</label><br>
-    	<input type="text" id="Postcode2" placeholder="Postcode"><br>
+					    	<label for="location2">Plaats</label>
+					    	<input type="text" id="location2" placeholder="Plaats">
 
-    	<label for="Plaats2">Plaats</label><br>
-    	<input type="text" id="Plaats2" placeholder="Plaats"><br>
+					    	<label for="sector">Sector</label>
+					    	<input type="text" id="sector" placeholder="Sector">
 
-    	<label for="Sector">Sector</label><br>
-    	<input type="text" id="Sector" placeholder="Sector"><br>
+					    	<label for="corebusiness">Core Business</label>
+					    	<input type="text" id="corebusiness" placeholder="Core Business">
+					    </p>
 
-    	<label for="CoreBusiness">Core Business</label><br>
-    	<input type="text" id="CoreBusiness" placeholder="Core Business"><br>
-    	</td>
+					    <p>
+					    	<label for="remarks2">Opmerkingen</label>
+					    	<input type="text" id="remarks2" placeholder="Heeft u nog opmerkingen?">
+					    </p>
+					</section>
 
-    <td></td>
-  </tr>
-
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-
-    <td><label for="Opmerkingen2">Opmerkingen</label><br>
-    	<input type="text" id="Opmerkingen2" placeholder="Heeft u nog opmerkingen?"></td>
-    
-    <td></td>
-  </tr>
-
-</table>
-		</fieldset>
-
-	</article>
-	
-</main>
-
-<aside></aside>
-<footer></footer>
-
-
-</body>
+				</fieldset>
+			</article>
+		</main>
+	</body>
 </html>
